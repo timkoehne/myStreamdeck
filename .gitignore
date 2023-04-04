@@ -1,0 +1,6 @@
+print/print template.psd
+streamdeck-server/.cache
+streamdeck-server/__pycache__
+streamdeck-arduino/.pio
+streamdeck-arduino/.vscode
+keycap images/print template.psd

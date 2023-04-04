@@ -1,0 +1,12 @@
+{
+    "com": "COM4",
+    "brokerAdress": "192.168.188.51",
+    "brokerPort": 1883,
+    "numberRows": 4,
+    "numberColumns": 4,
+    "volumeSlider0": "master",
+    "volumeSlider1": ["firefox.exe", "chrome.exe"],
+    "volumeSlider2": ["zoom.exe"],
+    "volumeSlider3": ["spotify.exe","vlc.exe"]
+
+}
