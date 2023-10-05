@@ -47,11 +47,13 @@ def keyPressed(i, j):
             pass
         if int(i)==1 and int(j)==0 and keyDelayPassed(i, j):
             client = mqtt.Client()
+            client.username_pw_set(mqttUser, mqttPass)
             client.connect(brokerAdress, brokerPort)
             print("Connected to MQTT Broker: " + brokerAdress)
             client.publish("shelly/switch/timszimmer/toggle", "", qos=0)
         if int(i)==1 and int(j)==1 and keyDelayPassed(i, j):
             client = mqtt.Client()
+            client.username_pw_set(mqttUser, mqttPass)
             client.connect(brokerAdress, brokerPort)
             print("Connected to MQTT Broker: " + brokerAdress)
             client.publish("esp/curtain/timszimmer/toggle", "", qos=0)
@@ -92,6 +94,8 @@ with open("../settings.json", "r") as file:
 brokerAdress = settings["brokerAdress"]
 brokerPort = settings["brokerPort"]
 comport = settings["com"]
+mqttUser = settings["mqttUsername"]
+mqttPass = settings["mqttPassword"]
 numberVolumeSliders =  len([key for key in list(settings.keys()) if "volumeSlider" in str(key)])
 volumeSlider = [createVolumeSliderFromSetting(i) for i in range(4)]
 numberRows = settings["numberRows"]

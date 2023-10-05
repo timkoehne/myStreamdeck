@@ -1,9 +1,11 @@
 {
-    "com": "COM4",
-    "brokerAdress": "192.168.188.51",
+    "com": "COM11",
+    "brokerAdress": "",
     "brokerPort": 1883,
     "numberRows": 4,
     "numberColumns": 4,
+    "mqttUsername": "",
+    "mqttPassword": "",
     "volumeSlider0": "master",
     "volumeSlider1": ["firefox.exe", "chrome.exe"],
     "volumeSlider2": ["zoom.exe"],
