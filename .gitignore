@@ -5,4 +5,6 @@ streamdeck-arduino/.pio
 streamdeck-arduino/.vscode
 keycap images/print template.psd
 .venv
+venv
+
 settings.json
